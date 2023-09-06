@@ -20,6 +20,7 @@ public class Enrollment {
 
     @ManyToOne
     @JoinColumn(name = "course_id")
+    @JsonBackReference
     private Course course;
 
     @ManyToOne
